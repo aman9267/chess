@@ -1,0 +1,10 @@
+@import '../constant.css';
+.files{
+    grid-column: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--tile-dark-color);
+    height: calc(.25 * var(--tile-size));
+}
