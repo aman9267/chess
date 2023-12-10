@@ -3,7 +3,7 @@ import React from "react";
 import "./Board.css";
 
 const Board = () => {
-  const rank = Array(8)
+  const ranks = Array(8)
     .fill()
     .map((x, i) => 8 - i);
   const files = Array(8)
@@ -13,23 +13,12 @@ const Board = () => {
 
   // const item = [1,2,3 ,4,5,6,7,8]
   // const list = ["a","b","c","d","e","f","g","h"]
+  const tailsColor = (i)=> i % 2 === 0 ? 'dark-color' : 'light-color';
+  // i / 2 == 0 ? 'dark' : 'light'
   return (
     <div className="board">
       <div className="tiles">
-        {rank.map((rank, i) => {
-          return (
-            <div key={i}>
-              {files.map((file, j) => {
-                return (
-                  <div key={j}>
-                    {rank}
-                    {file}
-                  </div>
-                );
-              })}
-            </div>
-          );
-        })}
+        {ranks.map((rank,i) => files.map((file, j) => <div key={j} className={tailsColor(i+j)}>{rank}{file}</div>))}
       </div>
     </div>
   );
