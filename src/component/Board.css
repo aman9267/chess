@@ -1,6 +1,7 @@
 @import '../constant.css';
 
 .board{
+    position: relative;
     display: grid;
     grid-template-columns: calc(.25*var(--tile-size)) calc(8*var(--tile-size));
 }
@@ -13,12 +14,11 @@
 }
 .tile{
 
+
 }
-.light-color{
-    /* background-color: red; */
+.tiles-light-color{
     background-color: var(--tile-light-color);
 }
-.dark-color{
-    /* background-color: green; */
+.tiles-dark-color{
     background-color: var(--tile-dark-color);
 }

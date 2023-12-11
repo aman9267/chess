@@ -5,7 +5,7 @@ export const Rank = ({ ranks }) => {
   return (
     <div className="ranks">
       {ranks.map((rank, i) => {
-        return <span>{rank}</span>;
+        return <span key={i}>{rank}</span>;
       })}
     </div>
   );

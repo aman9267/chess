@@ -1,7 +1,7 @@
 :root {
     --tile-size : 100px;
     --tile-light-color: #d1d1d1;
-    --tile-dark-color: #006e12;
+    --tile-dark-color: #da6d08;
     --bg-color: #fdfdfd;
 }
 @media all and (max-width : 540px){
